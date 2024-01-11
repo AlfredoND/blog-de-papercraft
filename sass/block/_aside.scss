@@ -1,0 +1,53 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.aside {
+  width: 280px;
+  height: 800px;
+}
+
+.aside-title {
+  color: #2c2c2c;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.aside-line-title {
+  width: 90%;
+  height: 4px;
+  margin: 0 auto;
+  margin-bottom: 0.7rem;
+  background-color: $red-orange;
+}
+
+.aside-item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: greenyellow;
+}
+.aside-img {
+  width: 13rem;
+}
+.aside-item-cont {
+  bottom: 0px;
+  position: absolute;
+  background-color: rgba(173, 216, 230, 0.418);
+}
+.aside-textPre {
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+.aside-dl {
+  display: flex;
+  padding: .2rem .5rem;
+  justify-content: space-between;
+}
+.aside-date {
+  font-size: 0.85rem;
+}
+.aside-link {
+  color: $amber;
+  font-size: 0.8rem;
+}

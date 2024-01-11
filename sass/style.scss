@@ -1,0 +1,30 @@
+@import "./config/reset";
+@import "./config/base";
+@import "./config/mixin";
+@import "./block/header";
+@import "./block/aside";
+@import "./pages/inicio";
+
+
+@media screen and (max-width: 970px) {
+  /* breakpoint del header */
+  .header-bar {
+    display: block;
+  }
+  .header-nav {
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .header-buttons {
+    display: none;
+  }
+  .header-link {
+    width: 15%;
+    padding: 1rem;
+  }
+  .active {
+    display: flex;
+  }
+}

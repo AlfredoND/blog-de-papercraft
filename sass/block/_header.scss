@@ -1,0 +1,54 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.header {
+  color: $white;
+  font-size: 1rem;
+  padding: 0.8rem;
+  max-width: 1400px;
+  background-color: $blue-royal;
+  @include Flex(space-around, center, row, wrap);
+}
+.header-title {
+  color: $amber;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: $lora;
+  font-style: oblique;
+}
+.header-bar {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.header-nav {
+  gap: 1rem;
+  @include Flex(center, center, row, nowrap);
+}
+.header-link {
+  display: flex;
+  padding: 0.6rem;
+  align-items: center;
+  border-radius: 0.6rem;
+  justify-content: center;
+  @include Flex(center, center, row, nowrap);
+}
+.header-link:hover {
+  color: $grey;
+  background-color: rgba(38, 35, 202, 0.55);
+}
+.header-buttons {
+  gap: 1.5rem;
+  @include Flex(center, center, row, nowrap);
+  &-button {
+    padding: 0.8rem 1rem;
+    border-radius: 0.7rem;
+    background-color: rgba(221, 221, 221, 0.23);
+  }
+  &-button:nth-child(1) {
+    background-color: rgba(37, 34, 194, 0.6);
+  }
+  &-button:hover {
+    color: $grey;
+  }
+}

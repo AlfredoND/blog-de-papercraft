@@ -1,0 +1,14 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.i-main {
+    height: 800px;
+    max-width: 1400px;
+    margin-top: 2rem;
+    @include Flex(center, center, row, nowrap);
+  }
+  .i-main-container {
+    width: 1000px;
+    height: 800px;
+    background-color: lightseagreen;
+  }
